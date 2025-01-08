@@ -34,7 +34,7 @@ public class Car {
         listModification.remove(modification);
     }
 
-    public String carDescription(){
-        return "Car model: " + carModel + ", manufacturer: " + carManufacturer + ", year: " + year + ", engine: " + engine.engineDescription() + ", mods list: " + listModification + ", parts: " + listPart;
+    public String getDescription(){
+        return "Car model: " + carModel + ", manufacturer: " + carManufacturer + ", year: " + year + ", engine: " + engine.getDescription() + ", mods list: " + listModification + ", parts: " + listPart;
     }
 }

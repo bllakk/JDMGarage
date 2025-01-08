@@ -22,7 +22,7 @@ public class Garage {
     public List<String> listCar(){
         List<String> info = new ArrayList<>();
         for (Car car : listGarage){
-            info.add(car.carDescription());
+            info.add(car.getDescription());
         }
         return info;
     }

@@ -7,7 +7,7 @@ public class Engine {
         this.power = power;
     }
 
-    public String engineDescription() {
+    public String getDescription() {
         return "Type of engine: " + type + ", power: " + power;
     }
 }
