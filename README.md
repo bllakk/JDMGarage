@@ -2,7 +2,7 @@
 
 ## Overview
 
-LibertyWalk-Java is a system model for a garage specializing in JDM (Japanese Domestic Market) cars. The system manages detailed information about cars, their components, modifications, and other related aspects. It has been designed to reflect the complex interactions and relationships between classes using object-oriented concepts such as composition, association, inheritance, and aggregation.
+LibertyWalk-Java is a model system for a garage specializing in JDM cars. The system manages detailed information about vehicles, their components, modifications, and other related aspects. Designed for learning purposes, it evolves incrementally as new object-oriented programming concepts are mastered, such as composition, association, inheritance, and aggregation.
 
 ---
 
@@ -56,19 +56,3 @@ LibertyWalk-Java is a system model for a garage specializing in JDM (Japanese Do
     - `addCar(Car car)`: Adds a car to the garage.
     - `removeCar(Car car)`: Removes a car from the garage.
     - `listCars()`: Returns a list of the cars currently in the garage.
-
----
-
-## Design Challenges and Relationships
-
-### **Composition**
-- A car must have an engine, which is an integral part of its identity. This implies that the `Car` class has a **composition** relationship with the `Engine` class, meaning the engine cannot exist without the car.
-
-### **Association**
-- A car can have many modifications, but a modification can be applied to several cars. This is an example of **association** between the `Car` and `Modification` classes.
-
-### **Inheritance**
-- You may create a `SportJDMCar` class that inherits from `Car` and adds specific features, such as paint type, spoilers, and other sports car modifications. This is an example of **inheritance** to create a more specialized model.
-
-### **Aggregation**
-- A garage can have many cars, but a car can exist independently of a garage. This is an example of **aggregation**, where the `Garage` class holds instances of the `Car` class, but cars can exist outside of the garage.
