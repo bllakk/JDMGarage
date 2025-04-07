@@ -18,8 +18,8 @@ LibertyWalk-Java is a model system for a garage specializing in JDM cars. The sy
     - `carParts`: A list of parts for the car (instances of the `CarPart` class).
 
 - **Methods**:
-    - `addMod(Modification mod)`: Adds a modification to the car.
-    - `removeMod(Modification mod)`: Removes a modification from the car.
+    - `addMod(Modification mod)`: Adds a Modification to the car.
+    - `removeMod(Modification mod)`: Removes a Modification from the car.
     - `getDescription()`: Returns a detailed description of the car.
 
 ### Engine
@@ -41,11 +41,11 @@ LibertyWalk-Java is a model system for a garage specializing in JDM cars. The sy
 
 ### Modification
 - **Attributes**:
-    - `type`: Type of modification (e.g., Aesthetic, Performance).
-    - `details`: A detailed description of the modification.
+    - `type`: Type of Modification (e.g., Aesthetic, Performance).
+    - `details`: A detailed description of the Modification.
 
 - **Methods**:
-    - `getDescription()`: Returns a detailed description of the modification.
+    - `getDescription()`: Returns a detailed description of the Modification.
 
 ### Garage
 - **Attributes**:
