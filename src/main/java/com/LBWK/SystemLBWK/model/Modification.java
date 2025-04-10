@@ -1,3 +1,5 @@
+package com.LBWK.SystemLBWK.model;
+
 public abstract class Modification {
     private String name;
     private double cost;

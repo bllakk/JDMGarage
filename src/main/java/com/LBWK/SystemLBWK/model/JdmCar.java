@@ -1,3 +1,5 @@
+package com.LBWK.SystemLBWK.model;
+
 import java.util.List;
 
 public class JdmCar extends Car{
@@ -5,8 +7,8 @@ public class JdmCar extends Car{
     private boolean legalized;
 
 
-    public JdmCar(String brand, String model, int year, Client owner, List<Modification> modifications, String countryOrigin, boolean legalized) {
-        super(brand, model, year, owner, modifications);
+    public JdmCar(String nameProject, String brand, String model, int year, Client owner, List<Modification> modifications, String countryOrigin, boolean legalized) {
+        super(nameProject, brand, model, year, owner, modifications);
         this.countryOrigin = countryOrigin;
         this.legalized = legalized;
     }

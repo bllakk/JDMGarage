@@ -1,12 +1,14 @@
+package com.LBWK.SystemLBWK.model;
+
 import java.util.List;
 
 public class Client {
     private String name;
-    private String cpf;
+    private int cpf;
     private String nationality;
     private List<Car> cars;
 
-    public Client(String name, String cpf, String nationality, List<Car> cars) {
+    public Client(String name, int cpf, String nationality, List<Car> cars) {
         this.name = name;
         this.cpf = cpf;
         this.nationality = nationality;
@@ -18,7 +20,7 @@ public class Client {
     }
     public void listCars(){
         for (Car c : cars){
-            System.out.println("Car: " + c.getBrand() + " " + c.getModel() + " " + c.getYear());
+            System.out.println("List of cars: " + c.getBrand() + " " + c.getModel() + " " + c.getYear());
         }
     }
 
@@ -26,7 +28,7 @@ public class Client {
         return name;
     }
 
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
 

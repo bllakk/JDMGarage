@@ -1,3 +1,5 @@
+package com.LBWK.SystemLBWK.model;
+
 import java.util.List;
 
 public class Employee {
@@ -29,5 +31,4 @@ public class Employee {
     public List<Modification> getAssignments() {
         return assignments;
     }
-
 }
