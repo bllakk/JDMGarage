@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Client {
     private String name;
-    private int cpf;
+    private long cpf;
     private String nationality;
     private List<Car> cars;
 
-    public Client(String name, int cpf, String nationality, List<Car> cars) {
+    public Client(String name, long cpf, String nationality, List<Car> cars) {
         this.name = name;
         this.cpf = cpf;
         this.nationality = nationality;
@@ -28,7 +28,7 @@ public class Client {
         return name;
     }
 
-    public int getCpf() {
+    public long getCpf() {
         return cpf;
     }
 

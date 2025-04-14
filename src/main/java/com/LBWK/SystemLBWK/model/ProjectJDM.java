@@ -3,12 +3,14 @@ package com.LBWK.SystemLBWK.model;
 import java.util.List;
 
 public class ProjectJDM {
+    private String projectName;
     Car car;
     List<Modification> steps;
     Employee leaderProject;
     boolean finished;
 
-    public void initializeProject(Car car, List<Modification> steps, Employee leaderProject) {
+    public void initializeProject(String projectName, Car car, List<Modification> steps, Employee leaderProject) {
+        this.projectName = projectName;
         this.car = car;
         this.steps = steps;
         this.leaderProject = leaderProject;
@@ -20,7 +22,7 @@ public class ProjectJDM {
     }
     public void summarizeProject() {
         System.out.println("Project Summary:");
-        System.out.println("com.LBWK.SystemLBWK.model.Car: " + car.getNameProject());
+        System.out.println("Project name" + projectName);
         System.out.println("Leader: " + leaderProject.getName());
         System.out.println("Steps: ");
         for (Modification step : steps) {
@@ -35,7 +37,9 @@ public class ProjectJDM {
         this.leaderProject = leaderProject;
         this.finished = finished;
     }
-
+    public String getProjectName(){
+        return projectName;
+    }
     public Car getCar() {
         return car;
     }

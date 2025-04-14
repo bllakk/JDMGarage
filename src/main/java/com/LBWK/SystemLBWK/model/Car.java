@@ -5,15 +5,13 @@ import com.LBWK.SystemLBWK.exception.DuplicateModificationException;
 import java.util.List;
 
 public abstract class Car {
-    private String nameProject;
     private String brand;
     private String model;
     private int year;
     private Client owner;
     private List<Modification> modifications;
 
-    public Car(String nameProject, String brand, String model, int year, Client owner, List<Modification> modifications) {
-        this.nameProject = nameProject;
+    public Car(String brand, String model, int year, Client owner, List<Modification> modifications) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -37,9 +35,6 @@ public abstract class Car {
     
     abstract void technicalSheet();
 
-    public String getNameProject() {
-        return nameProject;
-    }
     public String getBrand() {
         return brand;
     }
