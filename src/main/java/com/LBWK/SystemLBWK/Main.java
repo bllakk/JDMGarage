@@ -17,6 +17,7 @@ public class Main {
         List<ProjectJDM> listProject = new ArrayList<>();
 
         Client foundClient = null;
+        Employee foundEmployee = null;
 
         while (option != 0) {
             System.out.println("Welcome to the SystemLBWK");
@@ -36,7 +37,7 @@ public class Main {
             switch (option) {
 
                 case 0:
-                    System.out.println("Exiting system. Bye!");
+                    System.out.println("Exiting system.");
                     break;
 
                 default:

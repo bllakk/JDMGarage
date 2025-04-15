@@ -20,6 +20,12 @@ public class Storage {
         partsAvailable.put(partName, available - quantity);
     }
 
+    public void listParts(){
+        partsAvailable.forEach((key, value) -> {
+            System.out.println("Part: " + key + ", Quantity: " + value);
+        });
+    }
+
     public int verifyParts(String partName){
         return partsAvailable.getOrDefault(partName, 0);
     }

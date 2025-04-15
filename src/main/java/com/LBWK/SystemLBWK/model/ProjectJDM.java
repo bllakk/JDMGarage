@@ -4,42 +4,42 @@ import java.util.List;
 
 public class ProjectJDM {
     private String projectName;
-    Car car;
-    List<Modification> steps;
-    Employee leaderProject;
-    boolean finished;
+    private Car car;
+    private List<Modification> steps;
+    private Employee leaderProject;
+    private boolean finished;
 
-    public void initializeProject(String projectName, Car car, List<Modification> steps, Employee leaderProject) {
+    public ProjectJDM(String projectName, Car car, List<Modification> steps, Employee leaderProject, boolean finished) {
         this.projectName = projectName;
-        this.car = car;
-        this.steps = steps;
-        this.leaderProject = leaderProject;
-        this.finished = false;
-    }
-
-    public void finishProject() {
-        this.finished = true;
-    }
-    public void summarizeProject() {
-        System.out.println("Project Summary:");
-        System.out.println("Project name" + projectName);
-        System.out.println("Leader: " + leaderProject.getName());
-        System.out.println("Steps: ");
-        for (Modification step : steps) {
-            System.out.println("- " + step.getName());
-        }
-        System.out.println("Finished: " + finished);
-    }
-
-    public ProjectJDM(Car car, List<Modification> steps, Employee leaderProject, boolean finished) {
         this.car = car;
         this.steps = steps;
         this.leaderProject = leaderProject;
         this.finished = finished;
     }
-    public String getProjectName(){
+
+    public void finishProject() {
+        this.finished = true;
+    }
+
+    public void summarizeProject() {
+        System.out.println("Project Summary:");
+        System.out.println("Project name: " + projectName);
+        System.out.println("Leader: " + leaderProject.getName());
+        System.out.println("Steps: ");
+        if (steps != null && !steps.isEmpty()) {
+            for (Modification step : steps) {
+                System.out.println("- " + step.getName());
+            }
+        } else {
+            System.out.println("- No modifications registered.");
+        }
+        System.out.println("Finished: " + finished);
+    }
+
+    public String getProjectName() {
         return projectName;
     }
+
     public Car getCar() {
         return car;
     }
